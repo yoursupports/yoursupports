@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Supports | Tentang</title>
+    <link rel="icon" href="img/title.png">
+    <!--  font bebas neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for the landing page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel-inner {
+            overflow: hidden;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 500px;
+        }
+
+        .bebas{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 50px;
+        }
+        .bebas2{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 30px;
+        }
+        .bebas1{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+        }
+
+
+        /* Content section styles */
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Call-to-Action button style */
+        .cta-button {
+            background-color: #faa21c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #dd901a;
+        }
+
+        /* Testimonial section styles */
+        .testimonial {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* FAQ section styles */
+        .faq-card {
+            border: none;
+        }
+
+        /* Parallax effect */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+        }
+
+        /* Newsletter signup form */
+        .newsletter-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Video background container */
+        .video-background {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .animate-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .animate-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .col-md-6 {
+                margin-top: 20px;
+            }
+        }
+
+         /* Additional styling and customization */
+        /* ... Add your custom styles here ... */
+        .cta-section {
+            background-color: #204067;
+            padding: 100px 0;
+            text-align: center;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-section .btn {
+            font-size: 20px;
+            padding: 15px 30px;
+        }
+
+         /* Portfolio or Gallery Section */
+         .portfolio-section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Countdown Timer */
+        .countdown-timer {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .countdown-timer h2 {
+            margin-bottom: 20px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .countdown span {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg " style="background-color: #204067; padding-top: 2%; padding-bottom: 2%; padding-left: 4%; padding-right: 4%; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+    <a class="navbar-brand" href="tes.html"><img src="img/navbar.png" width="160px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="img/icon.png" class="img-fluid" width="40px">
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link mr-3" style="color: #d9d9d9;" href="index.html"><b>Home</b></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mr-3" style="color: #d9d9d9;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Layanan Kami</b>
+                </a>
+                <div class="dropdown-menu" style="border-radius: 10px;" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="computer.html">Layanan Komputer / Leptop</a>
+                  <a class="dropdown-item" href="android.html">Layanan Android</a>
+                  <a class="dropdown-item" href="lainnya.html">Layanan Lainnya</a>      
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link mr-3" style="color: #d9d9d9;" href="gallery.html"><b>Gallery</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #d9d9d9;" href="tentang.html"><b>Tentang Kami</b></a>
+            </li>
+          </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button onclick="window.location.href='https://www.instagram.com/direct/t/17846252391024947/';" class="btn btn-outline-light my-2 my-sm-0" style="border-radius: 15px;" type="button"><b>Konsultasi Sekarang</b></button>
+      </form>
+    </div>
+  </nav>
+
+
+<!-- Page 1 -->
+<div class="container mt-2 d-none d-md-block">
+    <div class="row">
+        <div class="col-md-6 animate-up">
+            <img src="img/tentang.png" class="img-fluid">
+        </div>
+        <div class="col-md-6 animate-up mt-5">
+            <h2 class="bebas">Tentang Kami?</h2>
+            <p align="justify">Your Supports adalah Startup yang berdiri pada tahun 2023 dan bergerak dibidang layanan jasa <b>Service Device</b> dan 
+                <b>Pengerjaan Tugas.</b> Sejak didirikan, Your Supports terus berupaya untuk mengembangkan layanan yang kami berikan, 
+                hingga kini Your Supports selalu mengutamakan kepuasan dan kepercayaan dari pelanggan.</p>
+
+            <p align="justify">
+                Your Supports telah berhasil membantu ribuan teman dari seluruh Indonesia untuk 
+                menyelesaikan Permasalahannya. Semua permasalahan kami kerjakan dengan teliti dan sepenuh hati
+                , demi mendapatkan <b>Kepuasan</b>, <b>Kepercayaan</b> pelanggan dan kualitas yang <b>Maksimal</b>. 
+                Bersama seluruh tim Your Supports, kami siap membantu Anda!
+            </p>
+            <button onclick="window.location.href='https://www.instagram.com/direct/t/17846252391024947/';" class="cta-button" style="border-radius: 15px;">Your Supports-in Aja!</button>
+        </div>
+    </div>
+</div>
+
+<!-- Page 1 -->
+<div class="container d-block d-md-none">
+    <div class="row">
+        <div class="col-md-6 animate-up">
+            <img src="img/tentang.png" class="img-fluid">
+        </div>
+        <div class="col-md-6 animate-up mt-5">
+            <h2 class="bebas">Tentang Kami?</h2>
+            <p align="justify">Your Supports adalah Startup yang berdiri pada tahun 2023 dan bergerak dibidang layanan jasa <b>Service Device</b> dan 
+                <b>Pengerjaan Tugas.</b> Sejak didirikan, Your Supports terus berupaya untuk mengembangkan layanan yang kami berikan, 
+                hingga kini Your Supports selalu mengutamakan kepuasan dan kepercayaan dari pelanggan.</p>
+
+            <p align="justify">
+                Your Supports telah berhasil membantu ribuan teman dari seluruh Indonesia untuk 
+                menyelesaikan Permasalahannya. Semua permasalahan kami kerjakan dengan teliti dan sepenuh hati
+                , demi mendapatkan <b>Kepuasan</b>, <b>Kepercayaan</b> pelanggan dan kualitas yang <b>Maksimal</b>. 
+                Bersama seluruh tim Your Supports, kami siap membantu Anda!
+            </p>
+            <button onclick="window.location.href='https://www.instagram.com/direct/t/17846252391024947/';" class="cta-button" style="border-radius: 15px;">Your Supports-in Aja!</button>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action Section -->
+<div class="cta-section text-center d-none d-md-block" style="margin-top: -100px;">
+    <div class="container animate-up">
+        <img src="img/navbar.png" width="160px">
+        <h2 class="bebas mt-4 text-white">Jaminan Kepuasan dari Kami!</h2>
+    </div>
+    <div class="container animate-up" style="margin-top: -80px;">
+        <div class="row mt-4" style="padding-left: 45px;">
+            <div class="col-4">
+                <div class="card" style="width: 18rem; border-radius: 25px;">
+                    <img class="card-img-top img-fluid" src="img/icon/clock.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="bebas2 card-title">Tepat Waktu</h5>
+                      <p>Kami selalu menjunjung tinggi kedisiplinan dan ketepatan waktu dalam bekerja, karena kepercayaan dan setiap detiknya berarti!</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem; border-radius: 25px;">
+                    <img class="card-img-top img-fluid" src="img/icon/user.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="bebas2 card-title">Privasi</h5>
+                      <p>Privasi pelanggan merupakan hal yang utama bagi kami, kami menjamin kerahasiaan dan anonimitas data dari pelanggan kami.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem; border-radius: 25px;">
+                    <img class="card-img-top img-fluid" src="img/icon/team.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="bebas2 card-title">Pekerja Berkualitas</h5>
+                      <p>Kami hanya memilih mitra yang berkualitas, jadi jangan takut untuk mempercayakan permasalahan anda kepada mereka!</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tampilan Mobile -->
+<div class="cta-section text-center d-block d-md-none">
+    <div class="container animate-up">
+        <img src="img/navbar.png" width="160px">
+        <h2 class="bebas mt-4 text-white">Jaminan Kepuasan dari Kami!</h2>
+    </div>
+    <div class="container animate-up" style="margin-top: -80px;">
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card" style="border-radius: 25px;">
+                    <img class="card-img-top img-fluid" src="img/icon/clock.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="bebas2 card-title">Tepat Waktu</h5>
+                      <p>Kami selalu menjunjung tinggi kedisiplinan dan ketepatan waktu dalam bekerja, karena kepercayaan dan setiap detiknya berarti!</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 mt-2">
+                <div class="card" style="border-radius: 25px;">
+                    <img class="card-img-top img-fluid" src="img/icon/user.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="bebas2 card-title">Privasi</h5>
+                      <p>Privasi pelanggan merupakan hal yang utama bagi kami, kami menjamin kerahasiaan dan anonimitas data dari pelanggan kami.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 mt-2">
+                <div class="card" style="border-radius: 25px;">
+                    <img class="card-img-top img-fluid" src="img/icon/team.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="bebas2 card-title">Pekerja Berkualitas</h5>
+                      <p>Kami hanya memilih mitra yang berkualitas, jadi jangan takut untuk mempercayakan permasalahan anda kepada mereka!</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/navbar.png" class="img-fluid" width="160px">
+            </div>
+            <div class="col-md-6 mt-2">
+                <p>© 2023 Your Support | <img src="img/intagram.png">: @your_supports</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Add Bootstrap JS scripts and custom script for slider -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Google Maps API script -->
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=myMap"></script>
+
+<!-- Font Awesome icons script -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- Script for animating elements on scroll -->
+<script>
+    function animateElements() {
+        const elements = document.querySelectorAll('.animate-up');
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (elementTop < windowHeight - 100) {
+                element.classList.add('active');
+            }
+        });
+    }
+
+    animateElements();
+
+    window.addEventListener('scroll', () => {
+        animateElements();
+    });
+</script>
+<script>
+    const countdownDate = new Date("2023-12-31 00:00:00").getTime();
+
+    const countdown = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+</body>
+</html>
